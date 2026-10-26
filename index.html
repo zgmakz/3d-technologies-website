@@ -1,266 +1,125 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Технології</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f7fb;
-    color: #222;
-    line-height: 1.6;
-}
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <h1 class="logo">3D Технології</h1>
 
-header {
-    background: #172554;
-    color: white;
-}
+        <div class="nav-links">
+          <a href="index.html">Головна</a>
+          <a href="info.html">Про технології</a>
+          <a href="printing.html">3D-друк</a>
+          <a href="gallery.html">Галерея</a>
+        </div>
+      </nav>
 
-.navbar {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+      <div class="hero-content">
+        <h2>Світ сучасних 3D технологій</h2>
 
-.logo {
-    font-size: 28px;
-}
+        <p>
+          Дізнайтеся більше про 3D-моделювання, 3D-друк, 3D-сканування та
+          використання тривимірних технологій у сучасному світі.
+        </p>
 
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
+        <a href="info.html" class="main-button">Дізнатися більше</a>
+      </div>
+    </header>
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+    <main>
+      <section class="intro">
+        <h2>Що таке 3D технології?</h2>
 
-.nav-links a:hover {
-    color: #93c5fd;
-}
+        <p>
+          3D технології — це сучасні технології, які дозволяють створювати,
+          редагувати, сканувати та друкувати тривимірні об'єкти.
+        </p>
+      </section>
 
-.hero {
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
+      <section class="cards">
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/printer.JPEG"
+            alt="3D-принтер"
+          />
 
-.hero-content {
-    max-width: 800px;
-    margin: auto;
-}
+          <h3>3D-друк</h3>
 
-.hero h2 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
+          <p>Створення фізичних об'єктів за допомогою цифрової 3D-моделі.</p>
 
-.hero p {
-    font-size: 19px;
-    margin-bottom: 30px;
-}
+          <a href="printing.html">Дізнатися більше</a>
+        </article>
 
-.main-button {
-    display: inline-block;
-    background: white;
-    color: #2563eb;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/model.JPEG"
+            alt="3D-модель"
+          />
 
-.main-button:hover {
-    background: #dbeafe;
-}
+          <h3>3D-моделювання</h3>
 
-.intro {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
+          <p>
+            Створення цифрових тривимірних моделей за допомогою спеціальних
+            програм.
+          </p>
 
-.intro h2 {
-    color: #172554;
-    margin-bottom: 15px;
-}
+          <a href="info.html">Дізнатися більше</a>
+        </article>
 
-.cards {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/scan.JPEG"
+            alt="3D-сканування"
+          />
 
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
+          <h3>3D-сканування</h3>
 
-.card-icon {
-    font-size: 45px;
-    margin-bottom: 15px;
-}
+          <p>Перетворення реального об'єкта на цифрову тривимірну модель.</p>
 
-.card h3 {
-    margin-bottom: 10px;
-    color: #172554;
-}
+          <a href="info.html">Дізнатися більше</a>
+        </article>
+      </section>
 
-.card a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: bold;
-}
+      <section class="advantages">
+        <h2>Де використовуються 3D технології?</h2>
 
-.advantages {
-    max-width: 1100px;
-    margin: 50px auto;
-    padding: 20px;
-}
+        <div class="advantages-grid">
+          <div>
+            <h3>🏭 Промисловість</h3>
+            <p>Проєктування деталей, прототипування та виробництво.</p>
+          </div>
 
-.advantages h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #172554;
-}
+          <div>
+            <h3>🏥 Медицина</h3>
+            <p>Створення моделей органів, протезів та медичних конструкцій.</p>
+          </div>
 
-.advantages-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
+          <div>
+            <h3>🏗 Архітектура</h3>
+            <p>Створення тривимірних моделей будівель та споруд.</p>
+          </div>
 
-.advantages-grid div {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-}
+          <div>
+            <h3>🎮 Розваги</h3>
+            <p>Створення моделей для відеоігор, фільмів та анімації.</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-.advantages-grid h3 {
-    margin-bottom: 10px;
-}
-
-.gallery {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-}
-
-.gallery-item {
-    background: white;
-    padding: 15px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.gallery-item img {
-    width: 100%;
-    max-width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-}
-
-.gallery-item h3 {
-    margin-top: 12px;
-    color: #172554;
-}
-
-footer {
-    margin-top: 50px;
-    padding: 25px;
-    background: #172554;
-    color: white;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-    }
-
-    .logo {
-        font-size: 24px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .hero {
-        padding: 50px 15px;
-    }
-
-    .hero h2 {
-        font-size: 30px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-        padding: 15px;
-    }
-
-    .advantages-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 15px;
-        margin: 25px auto;
-    }
-
-    .gallery-item {
-        padding: 12px;
-    }
-
-    .gallery-item img {
-        width: 90%;
-        max-width: 100%;
-        height: 180px;
-        margin: 0 auto;
-        object-fit: cover;
-        border-radius: 8px;
-        display: block;
-    }
-
-    .intro {
-        margin: 30px auto;
-        padding: 15px;
-    }
-
-    footer {
-        padding: 20px 15px;
-    }
-}
+    <footer>
+      <p>Автор: Омрл</p>
+      <p>Тема: Розробка вебсайту, присвяченого 3D технологіям</p>
+      <p>2026</p>
+    </footer>
+  </body>
+</html>
